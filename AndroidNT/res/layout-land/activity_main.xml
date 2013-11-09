@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill" >
+
+    <Button
+        android:id="@+jogada/casa1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="20dp"
+        android:minHeight="70dip"
+        android:minWidth="70dip" />
+
+    <Button
+        android:id="@+jogada/casa2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+jogada/casa1"
+        android:layout_alignBottom="@+jogada/casa1"
+        android:layout_toRightOf="@+jogada/casa1"
+        android:minHeight="70dip"
+        android:minWidth="70dip" />
+
+    <Button
+        android:id="@+jogada/casa3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+jogada/casa2"
+        android:layout_alignBottom="@+jogada/casa2"
+        android:layout_toRightOf="@+jogada/casa2"
+        android:minHeight="70dip"
+        android:minWidth="70dip" />
+
+    <Button
+        android:id="@+jogada/casa4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+jogada/casa1"
+        android:layout_below="@+jogada/casa1"
+        android:minHeight="70dip"
+        android:minWidth="70dip" />
+
+    <Button
+        android:id="@+jogada/casa5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+jogada/casa4"
+        android:layout_alignBottom="@+jogada/casa4"
+        android:layout_toRightOf="@+jogada/casa4"
+        android:minHeight="70dip"
+        android:minWidth="70dip" />
+
+    <Button
+        android:id="@+jogada/casa6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+jogada/casa5"
+        android:layout_alignBottom="@+jogada/casa5"
+        android:layout_alignLeft="@+jogada/casa3"
+        android:minHeight="70dip"
+        android:minWidth="70dip" />
+
+    <Button
+        android:id="@+jogada/casa7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+jogada/casa4"
+        android:layout_below="@+jogada/casa4"
+        android:minHeight="70dip"
+        android:minWidth="70dip" />
+
+    <Button
+        android:id="@+jogada/casa8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+jogada/casa7"
+        android:layout_alignBottom="@+jogada/casa7"
+        android:layout_toRightOf="@+jogada/casa7"
+        android:minHeight="70dip"
+        android:minWidth="70dip" />
+
+    <Button
+        android:id="@+jogada/casa9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+jogada/casa8"
+        android:layout_alignBottom="@+jogada/casa8"
+        android:layout_alignLeft="@+jogada/casa6"
+        android:minHeight="70dip"
+        android:minWidth="70dip" />
+
+    <Button
+        android:id="@+botao/sair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+jogada/casa9"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:minWidth="120dip"
+        android:text="@string/sair" />
+
+    <TextView
+        android:id="@+label/placar_jogador_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+jogada/casa6"
+        android:layout_alignLeft="@+label/placar_empate"
+        android:text="@string/zero"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+label/placar_jogador_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+label/placar_jogador_2"
+        android:layout_alignTop="@+jogada/casa6"
+        android:text="@string/zero"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+label/placar_empate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+label/placar"
+        android:layout_toRightOf="@+label/placar"
+        android:text="@string/zero"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+label/empate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+label/placar_jogador_1"
+        android:layout_alignBottom="@+label/placar_jogador_1"
+        android:layout_alignLeft="@+botao/novo_jogo"
+        android:layout_marginLeft="88dp"
+        android:text="@string/empate"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+label/nome_jogador1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+label/nome_jogador2"
+        android:layout_alignLeft="@+label/nome_jogador2"
+        android:text="@string/nome_jogador_1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+label/nome_jogador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+label/empate"
+        android:layout_alignRight="@+label/empate"
+        android:text="@string/nome_jogador_2"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+label/placar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+label/nome_jogador1"
+        android:layout_alignLeft="@+botao/sair"
+        android:text="@string/placar"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+botao/novo_jogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+botao/sair"
+        android:layout_alignBottom="@+botao/sair"
+        android:layout_toLeftOf="@+botao/sair"
+        android:minWidth="120dip"
+        android:text="@string/novo_jogo" />
+
+</RelativeLayout>

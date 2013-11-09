@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+<string name="app_name">Jogo Da Velha</string>
+<string name="hello_world">Hello world!</string>
+<string name="menu_settings">Settings</string>
+<string name="action_settings">Settings</string>
+<string name="title_activity_main">Jogo Da Velha</string>
+<string name="placar">Placar</string>
+<string name="nome_jogador_1">Jogador 1</string>
+<string name="nome_jogador_2">Jogador 2</string>
+<string name="empate">Empate</string>
+<string name="zero">0</string>
+<string name="novo_jogo">New Game</string>
+<string name="sair">Sair</string>
+ 
+</resources>
